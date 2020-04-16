@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChartsDemo"
+             xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             x:Class="ChartsDemo.MainPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label VerticalOptions="Center" HorizontalOptions="Center" Text="Abseces By Departement" Grid.Row="0"/>
+        <forms:ChartView x:Name="chartView" Grid.Row="1"/>
+        <Label VerticalOptions="Center" HorizontalOptions="Center" Text="Abseces By Sex" Grid.Row="2"/>
+        <forms:ChartView x:Name="chartView1" Grid.Row="3"/>
+        <Label VerticalOptions="Center" HorizontalOptions="Center" Text="Abseces By Marital status" Grid.Row="4"/>
+        <forms:ChartView x:Name="chartView2" Grid.Row="5"/>
+
+    </Grid>
+        
+
+</ContentPage>
